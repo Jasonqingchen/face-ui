@@ -35,13 +35,13 @@
 
         <!--按钮区域-->
         <div class="face-btn">
-          <button @click="faceVef()">{{faceImgState?'正在识别中...':'开始识别'}}</button>
+          <button @click="faceVef()">{{faceImgState?'正在识别中...':'识别验证'}}</button>
         </div>
 
         <!--消息区域-->
         <div class="msg">
             <div class="server-msg">{{msg}}</div>
-            <div class="welcome">Welcome to face recognition</div>
+            <div class="welcome">欢迎登陆</div>
         </div>
 
       </div>

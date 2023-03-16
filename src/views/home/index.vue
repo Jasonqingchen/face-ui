@@ -5,7 +5,7 @@
     <el-header>
       <div>
         <img :src="imageLogo" style="width: 40px;height: 40px;margin-left: 20px">
-        <router-link to="/desktop" class="logo-title">&nbsp;&nbsp;FACE-UI</router-link>
+        <router-link to="/desktop" class="logo-title">&nbsp;&nbsp;扫描打卡人脸识别系统</router-link>
       </div>
       <el-dropdown>
         <span class="el-dropdown-link" >
@@ -42,6 +42,28 @@
             </router-link>
 
           </el-submenu>
+          <el-submenu index="2">
+
+                      <template slot="title">
+                        <i class="el-icon-setting" style="color: #008390"></i>
+                        <span slot="title">扫描打卡后台管理</span>
+                      </template>
+
+                      <router-link class="router-link-active"  to="/setting">
+                          <el-menu-item index="1-1">
+                            设置助手
+                          </el-menu-item>
+                      </router-link>
+                      <router-link class="router-link-active"  to="/cplist">
+                        <el-menu-item index="1-2"> 选手成绩列表 </el-menu-item>
+                      </router-link>
+                      <router-link class="router-link-active"  to="/reg">
+                        <el-menu-item index="1-3"> 选手注册</el-menu-item>
+                      </router-link>
+                      <router-link class="router-link-active"  to="/userqd">
+                        <el-menu-item index="1-4"> 选手签到  </el-menu-item>
+                      </router-link>
+                    </el-submenu>
         </el-menu>
       </el-aside>
 

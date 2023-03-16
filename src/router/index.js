@@ -30,7 +30,27 @@ const routes = [
         path: '/faceLog',
         name: 'log',
         component: () => import('@/components/faceLog/index')
-      }
+      },
+      {
+        path: '/setting',
+        name: 'setting',
+        component: () => import('@/components/setting/index')
+      },
+      {
+      path: '/cplist',
+      name: 'cplist',
+      component: () => import('@/components/cplist/index')
+      },
+      {
+            path: '/reg',
+            name: 'reg',
+            component: () => import('@/components/reg/index')
+                   },
+      {
+      path: '/userqd',
+      name: 'userqd',
+      component: () => import('@/components/userqd/index')
+                                       }
     ]
   }
 ]
